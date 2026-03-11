@@ -13,8 +13,10 @@ This repository documents my **JavaScript learning journey by Programming Hero**
 ## B12JS
 
 <p align="left">
-    <img src="https://i.ibb.co.com/FbfZC7hf/s.jpg" alt="B12JS in action" />
+    <img src="https://i.ibb.co.com/99TLyVf2/B12-JS-README-BANNER.png" alt="B12JS in action" />
 </p>
+
+##
 
 ## License
 
