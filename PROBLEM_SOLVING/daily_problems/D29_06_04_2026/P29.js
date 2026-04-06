@@ -4,9 +4,15 @@
 
 function getMostFrequentCategory(items) {
   // edge case: jodi empty array hoy
+  /**
+   * ```js
   if (items.length === 0) {
     return null;
   }
+*/
+
+  // micro improvment: safer check, bcz jodi data api theke ase tahole onek time e data array naw hote pare
+  if (!Array.isArray(items) || items.length === 0) return null;
 
   const categoryObj = {};
   let maxCount = 0;
@@ -20,12 +26,11 @@ function getMostFrequentCategory(items) {
     const category = item.category;
 
     categoryObj[category] = (categoryObj[category] || 0) + 1;
-  }
 
-  for (const key in categoryObj) {
-    if (categoryObj[key] > maxCount) {
-      maxCount = categoryObj[key];
-      resultCategory = key;
+    // maxCount track
+    if (categoryObj[category] > maxCount) {
+      maxCount = categoryObj[category];
+      resultCategory = category;
     }
   }
 
