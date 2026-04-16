@@ -20,7 +20,7 @@ Find the friend with the smallest name.
 
 Your task is to calculate the `total budget` required to buy electronics:
 
-```md
+```js
 laptop = 35000 tk
 tablet = 15000 tk
 mobile = 20000 tk
