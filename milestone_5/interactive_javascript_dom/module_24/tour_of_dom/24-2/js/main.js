@@ -12,8 +12,5 @@ console.log("\n"); // new line
 const allHeadings = document.getElementsByTagName("h1");
 for (const h1 of allHeadings) {
   console.log(h1);
-
-  console.log("\n");
-
   console.log(h1.innerText);
 }
