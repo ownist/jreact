@@ -1,0 +1,11 @@
+.bg {
+  padding: 1rem 20px;
+  border-radius: 8px;
+  background-color: yellow;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.fontColor {
+  color: red;
+}
