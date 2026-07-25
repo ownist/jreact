@@ -66,16 +66,23 @@
             placeholder="Username"
           />
           <div class="relative">
-            <input
-              required
-              autocomplete="off"
-              class="bg-neutral-100 border border-stone-300 w-full rounded-md px-4 py-3.5 text-zinc-800 text-base font-normal placeholder:text-zinc-500"
-              type="password"
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
+            <div class="relative">
+              <input
+                id="password_filed"
+                required
+                autocomplete="off"
+                class="bg-neutral-100 border border-stone-300 w-full rounded-md px-4 pr-9 py-3.5 text-zinc-800 text-base font-normal placeholder:text-zinc-500"
+                type="password"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+
+              <span class="absolute top-1/2 right-4 -translate-y-1/2">
+                <i class="ri-eye-off-line cursor-pointer eye_show"></i>
+              </span>
+            </div>
 
             <!-- forgott password -->
             <div class="w-full text-right">
