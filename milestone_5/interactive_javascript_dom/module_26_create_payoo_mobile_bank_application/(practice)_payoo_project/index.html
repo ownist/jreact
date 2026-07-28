@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <!-- link favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- connect style file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- linked tailwindcss cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- connect daisy khala -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- add remixicon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- for desktop device -->
+    <section
+      class="hidden sm:flex items-center justify-center w-full min-h-dvh p-4"
+    >
+      <div
+        class="flex flex-col justify-center mx-auto items-center text-center space-y-8 max-w-md"
+      >
+        <img width="80" src="./assets/images/logo.png" alt="logo" />
+
+        <div class="space-y-4">
+          <h3
+            class="px-5 py-2 rounded-full bg-blue-600 text-white w-max mx-auto"
+          >
+            Small Screen Required
+          </h3>
+
+          <p class="text-zinc-500 text-2xl">
+            Your screen is too much larger for an optimal experience.
+          </p>
+
+          <div
+            class="space-y-2 bg-gray-100 px-4 py-5 rounded-lg border border-zinc-200"
+          >
+            <div
+              class="size-24 bg-blue-100 rounded-full grid place-items-center mx-auto"
+            >
+              <span class="">
+                <i class="ri-smartphone-line text-5xl text-blue-400"></i>
+              </span>
+            </div>
+
+            <div class="">
+              <h4 class="font-medium text-xl">Maximum width: 640px</h4>
+              <p class="text-base text-zinc-500">
+                Please use a device with a smaller screen for the best
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- for mobile device -->
+    <section
+      class="sm:hidden flex items-center justify-center w-full min-h-dvh p-4"
+    >
+      <div class="max-w-sm w-full space-y-10">
+        <img
+          class="mx-auto"
+          width="60"
+          src="./assets/images/logo.png"
+          alt="logo"
+        />
+
+        <form action="#" class="space-y-4">
+          <!-- input box -->
+          <div class="flex flex-col gap-y-3">
+            <label
+              for="mobile_number"
+              class="text-zinc-950 text-base font-medium"
+              >Mobile Number</label
+            >
+            <input
+              id="user_mobile_number"
+              required
+              type="number"
+              name="mobile_number"
+              class="text-zinc-950 w-full text-base font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+              placeholder="Enter your number"
+            />
+          </div>
+
+          <!-- input box -->
+          <div class="flex flex-col gap-y-3">
+            <label
+              for="four_digit_pin"
+              class="text-zinc-950 text-base font-medium"
+              >4 Digit Pin</label
+            >
+            <input
+              id="user_four_digit_pin"
+              required
+              type="password"
+              name="four_digit_pin"
+              class="text-zinc-950 text-base w-full font-light px-5 py-4 rounded-lg border-none outline-none bg-gray-100 focus:bg-gray-200 focus:border focus:border-zinc-500"
+              placeholder="Enter 4 Digit Pin"
+            />
+          </div>
+
+          <!-- continue button -->
+          <button
+            id="continue_btn"
+            type="submit"
+            class="text-white text-base font-semibold px-4 py-4 rounded-full bg-black w-full"
+          >
+            Continue
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- connect scrip / js file -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
